@@ -87,7 +87,7 @@ const DashboardPage = () => {
       <DashboardSidebar />
 
       <main className="mx-auto max-w-7xl px-4 pb-10 pt-4 sm:px-6 lg:ml-60 lg:px-8 lg:pt-7">
-        <div className="mb-5 flex items-center justify-end">
+        <div className="hidden items-center justify-end lg:mb-5 lg:flex">
           <UserButton />
         </div>
 

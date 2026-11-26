@@ -322,7 +322,7 @@ const GenerateProgramPage = () => {
       const client = new Vapi(process.env.NEXT_PUBLIC_VAPI_API_KEY!);
       vapiClientRef.current = client;
       attachCallListeners(client, epoch);
-      const startedCall = await client.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
+      const startedCall = await client.start(process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID!, {
         variableValues: {
           full_name: fullName,
           user_id: user?.id,
